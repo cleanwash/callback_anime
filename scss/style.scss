@@ -28,6 +28,7 @@ main {
 	position: absolute;
 	top: 25vh;
 	left: 25vw;
+	perspective: 700px;
 
 	> * {
 		background: #000;
@@ -63,5 +64,12 @@ main {
 		top: 0;
 		left: 0;
 		opacity: 0;
+		transform: rotateY(230deg);
+		transition: 1s;
+
+		&.on {
+			opacity: 1;
+			transform: rotateY(0deg);
+		}
 	}
 }
